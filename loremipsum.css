@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.navigation {
+    background-color: #292828;
+    height: 80px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: Corbel;
+}
+
+.content {
+    margin-top: 250px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+a:hover {
+    color: yellow;
+    transition: 0.5s;
+}
+
+.option3 {
+    color: turquoise;
+}
+
+@media screen and (min-width: 700px) {
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: Corbel;
+        font-size: 40px;
+    }
+
+    .options {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 12px;
+    }
+
+    img {
+        display: none;
+    }
+
+    .mobilenav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .options {
+        display: none;
+    }
+
+    img {
+        display: block;
+        padding-top: 12px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: Corbel;
+        font-size: 40px;
+    }
+
+    .mobilenav {
+        background-color: #292828;
+        width: 300px;
+        height: 200px;
+        display: none;
+    }
+
+    .hamburger:hover .mobilenav{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        width: 20%;
+    }
+
+    a:hover {
+        color: yellow;
+        transition: 0.5s;
+    }
+
+    .option3mobile {
+        color: turquoise;
+    }
+}
